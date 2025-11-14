@@ -1,4 +1,6 @@
-export default {
+/* eslint-disable no-undef */
+
+module.exports = {
   branches: ['main', {
     "name": 'staging',
     "prerelease": 'beta'
