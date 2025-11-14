@@ -1,13 +1,23 @@
 {
   "name": "universal_asset_mananger",
   "version": "1.0.0",
-  "main": "dist/example/index.js",
+  "main": "dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+   "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs",
+      "types": "./dist/index.d.ts"
+    }
+  },
   "scripts": {
     "test": "node --test -r ts-node/register tests/AssetUploader.test.ts",
     "example": "tsc && ts-node example/index.ts",
     "test:watch": "jest --watch",
     "postinstall": "npx husky install",
-    "lint": "eslint . --ext .ts"
+    "lint": "eslint . --ext .ts",
+    "build": "tsup"
   },
   "repository": {
     "type": "git",
@@ -32,6 +42,7 @@
     "globals": "^16.5.0",
     "jiti": "^2.6.1",
     "ts-node": "^10.9.2",
+    "tsup": "^8.5.1",
     "typescript": "^5.9.3",
     "typescript-eslint": "^8.46.3"
   },
