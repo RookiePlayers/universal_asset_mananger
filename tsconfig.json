@@ -16,5 +16,5 @@
     "forceConsistentCasingInFileNames": true
   },
   "include": ["src"],          // key: ONLY compile src
-  "exclude": ["dist", "node_modules", "**/*.test.ts", "**/__tests__/**"] // be explicit
+  "exclude": ["dist", "node_modules"] // be explicit
 }
