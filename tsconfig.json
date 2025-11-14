@@ -1,20 +1,15 @@
 {
   "compilerOptions": {
-    "target": "ES2022",
-    "module": "ES2022",
-    "moduleResolution": "Bundler",
-    "rootDir": "src",          // key: all inputs live under src/
-    "outDir": "dist",          // key: all outputs go to dist/
-    "declaration": true,
-    "declarationMap": true,
-    "emitDeclarationOnly": false,
-    // optional but fine:
-    "declarationDir": "dist",
-    "strict": true,
+    "module": "commonjs",
+    "target": "ES2016",
+    "outDir": "dist",
+    "resolveJsonModule": true,
     "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
     "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true
   },
-  "include": ["src"],          // key: ONLY compile src
-  "exclude": ["dist", "node_modules"] // be explicit
+  "include": ["firebase_admin_service.json", "**/*.ts"],
+  "exclude": ["node_modules", "dist","release.config.cjs"]
 }
+
