@@ -1,0 +1,24 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+/assets
+
+# testing
+/coverage
+
+# production
+/build
+/dist
+/.firebase
+/typesense_data
+
+*.env.*
+**/.env
+.env
+!.env.example
+*.lock
+#it’s recommended to commit the package-lock.json file (or npm-shrinkwrap.json) to version control, especially for npm-based projects.
+!yarn.lock

@@ -1,0 +1,47 @@
+{
+  "name": "universal_asset_mananger",
+  "version": "1.0.0",
+  "main": "dist/example/index.js",
+  "scripts": {
+    "test": "node --test -r ts-node/register tests/AssetUploader.test.ts",
+    "example": "tsc && ts-node example/index.ts",
+    "test:watch": "jest --watch",
+    "postinstall": "npx husky install",
+    "lint": "eslint . --ext .ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RookiePlayers/universal_asset_manager.git"
+  },
+  "author": "Olamide Ogunlade",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/RookiePlayers/universal_asset_manager/issues"
+  },
+  "homepage": "https://github.com/RookiePlayers/universal_asset_manager#readme",
+  "description": "",
+  "devDependencies": {
+    "@commitlint/config-conventional": "^20.0.0",
+    "@eslint/js": "^9.39.1",
+    "@types/express-fileupload": "^1.5.1",
+    "@types/mime-types": "^3.0.1",
+    "@types/node": "^24.10.0",
+    "eslint": "^9.39.1",
+    "express": "^5.1.0",
+    "express-fileupload": "^1.5.2",
+    "globals": "^16.5.0",
+    "jiti": "^2.6.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.46.3"
+  },
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^8.46.3",
+    "commitlint": "^20.1.0",
+    "dotenv": "^17.2.3",
+    "mime-types": "^3.0.1",
+    "nanoid": "^5.1.6",
+    "ruki-logger": "^1.0.2",
+    "universal_media_storage": "^1.1.3"
+  }
+}
