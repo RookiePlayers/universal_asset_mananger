@@ -1,4 +1,3 @@
-
 export default {
   branches: ['main', {
     "name": 'staging',
