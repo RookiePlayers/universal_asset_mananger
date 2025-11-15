@@ -1,8 +1,10 @@
 /* eslint-disable no-undef */
 
 module.exports = {
-  branches: [
-    'main', {
+  branches: [{
+    "name": 'main',
+    "release": true
+  }, {
     "name": 'staging',
     "prerelease": 'beta'
   },{

@@ -4,6 +4,11 @@
   "main": "dist/index.js",
   "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
+  "homepage": "https://github.com/RookiePlayers/universal_asset_mananger#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/RookiePlayers/universal_asset_mananger.git"
+  },
    "exports": {
     ".": {
       "import": "./dist/index.js",
@@ -19,16 +24,11 @@
     "lint": "eslint . --ext .ts",
     "build": "tsup"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/RookiePlayers/universal_asset_manager.git"
-  },
   "author": "Olamide Ogunlade",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/RookiePlayers/universal_asset_manager/issues"
   },
-  "homepage": "https://github.com/RookiePlayers/universal_asset_manager#readme",
   "description": "",
   "devDependencies": {
     "@commitlint/config-conventional": "^20.0.0",
